@@ -41,12 +41,6 @@
     <echo message="${ant.project.name}: ${ant.file}" />
     <javac debug="true" debuglevel="${debuglevel}" destdir="bin" source="${source}" target="${target}" includeantruntime="false">
       
-    	<classpath>
-	      	<pathelement path="${classpathDir}"/>
-	      	<fileset dir="lib">
-	      	  <include name="**/*.jar"/>
-	      	</fileset>
-	   </classpath>
     </javac>
   </target>
   
