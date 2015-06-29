@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- WARNING: Eclipse auto-generated file.
+              Any modifications will be overwritten.
+              To include a user specific buildfile here, simply create one in the same
+              directory with the processing instruction <?eclipse.ant.import?>
+              as the first entry and export the buildfile again. -->
+    <project basedir="." name="JenInt" >
+   
+   
+    
+    <target name="build-war" depends="build-project">
+		<war destfile="JenInt.war" webxml="WebContent/WEB-INF/web.xml">
+			<fileset dir="WebContent">
+				<include name="index.html" />
+				<include name="index.jsp" />
+			</fileset>
+			<lib dir="WebContent/WEB-INF/lib">
+			</lib>
+		</war>
+	</target>
+</project>
